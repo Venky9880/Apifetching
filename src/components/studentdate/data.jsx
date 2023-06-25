@@ -1,0 +1,22 @@
+export let mydata=[
+    {
+        myname:"venky",
+        degree:"BSC",
+        percentage:44,
+        yop:2019,
+        college:"gsc",
+        email:"venky@gmail.com",
+        mobile:9880823223,
+        stream:"pcm"
+    },
+    {
+        myname:"ramu",
+        degree:"BSC",
+        percentage:54,
+        yop:2019,
+        college:"gsc",
+        email:"ramu@gmail.com",
+        mobile:98430823223,
+        stream:"pmcs"
+    }
+]

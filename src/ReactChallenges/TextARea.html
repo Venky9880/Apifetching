@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <form action="">
+    <input id="fname" value="mani" type="text" placeholder="enter your firstname">
+    <input id="mname" value="kumar" type="text" placeholder="enter your middlename">
+    <input id="lname" value="m" type="text" placeholder="enter your lastname">
+  </form>
+  <textarea name="" id="text" cols="30" rows="10">adress:bengalore,state:karnataka,city:benalore,pincode:560001.
+  </textarea>
+  <button id="click">CLICK</button>
+  <script>
+   function details(){
+    let felem=document.getElementById("fname")
+   let melem=document.getElementById("mname")
+   let lelem=document.getElementById("lname")
+   let textelem=document.getElementById("text")
+   let fullname=`FullName=${felem.value} ${melem.value} ${lelem.value}`;
+   console.log(fullname)
+   let addres=textelem.value
+//    console.log(addres)
+   let adresarray=addres.split(",")
+   console.log(adresarray[0])
+   console.log(adresarray[1])
+   console.log(adresarray[3])
+   }
+   let clickelm=document.getElementById("click")
+   clickelm.addEventListener("click",details)
+  </script>
+</body>
+</html>
